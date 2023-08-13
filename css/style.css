@@ -107,8 +107,14 @@ div.main-month {
 div.main-date {
     margin: 0px;
     padding: 0px;
-    font-size: 16pt;
+    font-size: 14pt;
     display: inline-block;
+}
+
+span.main-dow {
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
 }
 
 div.main-menu {

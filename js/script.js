@@ -81,7 +81,8 @@ function getDateString(d) {
     var yy = d.getFullYear();
     var mm = ('00' + (d.getMonth() + 1)).slice(-2);
     var dd = ('00' + d.getDate()).slice(-2);
-    return yy + '-' + mm + '-' + dd;
+    var dow = ["日", "月", "火", "水", "木", "金", "土"][d.getDay()];
+    return yy + '-' + mm + '-' + dd + '-' + dow;
 }
 
 function getDate(value) {
@@ -200,7 +201,7 @@ function drowDayBox(holiday, index) {
     str += '<div class="main-holidays">';
     str += '<div class="main-day">';
     str += '<div class="main-month">' + holiday.date.slice(5, 7) + '</div>';
-    str += '<div class="main-date">' + holiday.date.slice(8, 10) + '</div>';
+    str += '<div class="main-date">' + holiday.date.slice(8, 10) +'<span class="main-dow"> ['+ holiday.date.slice(11, 12) + ']</span></div>';
     str += '</div>';
     str += '<div class="main-items">';
     holiday.itemList.forEach(function (item, index) {
