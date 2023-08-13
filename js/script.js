@@ -308,8 +308,8 @@ function drowSettingPanel() {
         str += '<div class="setting-number' + cssClass + '" id="setting-number' + index + '"';
         str += ' onclick="select(this,\'setting-number\')">';
         str += (index + 1) + '</div>';
-        str += '<input id="s' + index + '" type="date" value="' + holidays.dayList[0].date + '">～';
-        str += '<input id="e' + index + '" type="date" value="' + holidays.dayList[holidays.dayList.length - 1].date + '"><br>';
+        str += '<input id="s' + index + '" type="date" value="' + holidays.dayList[0].date.slice(0, 10) + '">～';
+        str += '<input id="e' + index + '" type="date" value="' + holidays.dayList[holidays.dayList.length - 1].date.slice(0, 10) + '"><br>';
     });
     drow('setting-content', str);
 }
