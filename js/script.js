@@ -1,6 +1,11 @@
 // 定数
 var STORAGE_NAME = 'manada_umi-holiday_advent_calendar_sd';
-var ICON_LIST = ['task/box', 'task/beer', 'task/book', 'task/cook', 'task/dustcloth', 'task/gardening', 'task/game', 'task/hammer', 'task/home', 'task/note', 'task/PC', 'task/sport', 'task/trip', ];
+var ICON_LIST = ['task/box',
+    'task/home', 'task/hammer', 'task/gardening', 'task/beer', 'task/cook', 'task/clothes',
+    'task/book', 'task/note', 'task/document', 'task/PC', 'task/PC2', 'task/game', 'task/microphone',
+    'task/park', 'task/sea', 'task/sport', 'task/camp', 'task/painting', 'task/trip', 'task/bag', 'task/hospital',
+    'task/bed', 'task/broom', 'task/dustcloth', 'task/laundry', 'task/hanger', 'task/garbage'
+];
 var PANEL_LIST = ['Main', 'List', 'Edit', 'Setting', 'Config'];
 
 // global変数
@@ -201,7 +206,7 @@ function drowDayBox(holiday, index) {
     str += '<div class="main-holidays">';
     str += '<div class="main-day">';
     str += '<div class="main-month">' + holiday.date.slice(5, 7) + '</div>';
-    str += '<div class="main-date">' + holiday.date.slice(8, 10) +'<span class="main-dow"> ['+ holiday.date.slice(11, 12) + ']</span></div>';
+    str += '<div class="main-date">' + holiday.date.slice(8, 10) + '<span class="main-dow"> [' + holiday.date.slice(11, 12) + ']</span></div>';
     str += '</div>';
     str += '<div class="main-items">';
     holiday.itemList.forEach(function (item, index) {
