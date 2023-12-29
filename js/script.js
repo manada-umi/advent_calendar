@@ -4,7 +4,8 @@ var ICON_LIST = ['task/box',
     'task/home', 'task/hammer', 'task/gardening', 'task/beer', 'task/cook', 'task/clothes',
     'task/book', 'task/note', 'task/document', 'task/PC', 'task/PC2', 'task/game', 'task/microphone',
     'task/park', 'task/sea', 'task/sport', 'task/camp', 'task/painting', 'task/trip', 'task/bag', 'task/hospital',
-    'task/bed', 'task/broom', 'task/dustcloth', 'task/laundry', 'task/hanger', 'task/garbage'
+    'task/bed', 'task/broom', 'task/dustcloth', 'task/laundry', 'task/hanger', 'task/garbage',
+    'task/bank',
 ];
 var PANEL_LIST = ['Main', 'List', 'Edit', 'Setting', 'Config'];
 
